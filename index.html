@@ -4,12 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>South Side Brewing</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Header / Navigation -->
   <header class="site-header">
     <div class="container header-inner">
@@ -20,40 +18,38 @@
           <p class="tag">Small-batch. Modern. Rustic.</p>
         </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
     </div>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <!-- Intro Section -->
+    <!-- Welcome / Intro Section -->
     <section class="intro container">
-      <h3>Welcome to the South Side</h3>
+      <h2>Welcome to the South Side</h2>
       <p>This site documents our brewing experiments — recipes, tasting notes, and photos. Explore my batches on the recipes page, and feel free to reach out to me directly if you are interested in the fine ingredients.</p>
     </section>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2>Handcrafted homebrew from the South Side</h2>
-          <p>Small-batch recipes, clear process notes, and a gallery of our best pours. Learn, brew, repeat.</p>
-          <a class="btn" href="recipes.html">Explore Recipes</a>
-        </div>
-        <div class="hero-photo">
-          <img alt="Amber ale in pint glass" src="assets/images/amber-ale-hero.jpg">
-        </div>
+    <section class="hero container">
+      <div class="hero-text">
+        <h2>Handcrafted homebrew from the South Side</h2>
+        <p>Small-batch recipes, clear process notes, and a gallery of our best pours. Learn, brew, repeat.</p>
+        <a class="btn" href="recipes.html">Explore Recipes</a>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/images/amber-ale-hero.jpg" alt="Amber ale in pint glass">
       </div>
     </section>
 
-    <!-- Featured Brew Section -->
+    <!-- Featured Brew -->
     <section class="featured container">
       <h3>Featured Brew</h3>
       <div class="cards">
@@ -69,6 +65,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> South Side Brewing — hobbyist brewer. Not for sale.</p>
