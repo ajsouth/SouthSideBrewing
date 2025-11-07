@@ -24,6 +24,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ===== Container ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* ===== Header ===== */
 .site-header {
   background: #fff;
@@ -36,7 +43,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .brand {
@@ -64,7 +71,7 @@ a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  display: none;
+  display: none; /* only visible on mobile */
 }
 
 /* ===== Navigation ===== */
@@ -84,26 +91,26 @@ a:hover {
 /* ===== Hero ===== */
 .hero {
   display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 1rem;
-  background: #f7f3f0;
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: #f7f3f0;
 }
 
 .hero-inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: center;
+  gap: 2rem;
 }
 
 .hero-text {
-  flex: 1 1 300px;
-  padding-right: 1rem;
+  flex: 1;
 }
 
 .hero-text h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -119,39 +126,41 @@ a:hover {
   border-radius: 4px;
 }
 
-/* Hero image */
+.hero-photo {
+  flex: 1;
+}
+
 .hero-photo img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 8px;
+  display: block;
+  object-fit: cover;
 }
 
 /* ===== Intro ===== */
 .intro {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   max-width: 800px;
-  margin: auto;
 }
 
 /* ===== Featured Brew ===== */
 .featured {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
+  padding: 2rem 0;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card {
+  flex: 0 0 300px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -215,7 +224,6 @@ a:hover {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    list-style: none;
   }
 
   .nav-list li {
@@ -232,7 +240,6 @@ a:hover {
   }
 
   .hero-text {
-    padding-right: 0;
     text-align: center;
     margin-bottom: 1rem;
   }
