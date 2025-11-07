@@ -64,7 +64,7 @@ a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* hidden on desktop */
+  display: none;
 }
 
 /* ===== Navigation ===== */
@@ -79,10 +79,6 @@ a:hover {
 
 .nav-list li {
   margin-left: 1rem;
-}
-
-.nav-list li a {
-  padding: 0.5rem 0;
 }
 
 /* ===== Hero ===== */
@@ -161,11 +157,18 @@ a:hover {
   flex-direction: column;
 }
 
-.card img {
+.card-img {
   width: 100%;
-  height: 200px;       /* fixed height for consistency */
-  object-fit: cover;   /* crops excess but keeps aspect ratio */
+  aspect-ratio: 4/3;
+  overflow: hidden;
   border-bottom: 1px solid #ddd;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-body {
@@ -198,14 +201,14 @@ a:hover {
   }
 
   .main-nav {
-    display: none; /* hidden by default */
+    display: none;
     width: 100%;
     background: #fff;
     border-top: 1px solid #ddd;
   }
 
   .main-nav.active {
-    display: block; /* shows under hamburger */
+    display: block;
   }
 
   .nav-list {
@@ -234,7 +237,11 @@ a:hover {
     margin-bottom: 1rem;
   }
 
-  .card img {
-    height: 180px; /* slightly smaller on mobile */
+  .card {
+    max-width: 90%;
+  }
+
+  .card-img {
+    aspect-ratio: 4/3;
   }
 }
