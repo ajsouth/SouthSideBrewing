@@ -76,14 +76,14 @@ a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* desktop hides burger */
+  display: none; /* hidden on desktop */
 }
 
 /* =============================
    Navigation
 ============================= */
 .main-nav {
-  display: flex; /* desktop menu always visible */
+  display: flex; /* default desktop menu */
 }
 
 .nav-list {
@@ -111,9 +111,8 @@ a:hover {
 
 .hero-inner {
   display: flex;
-  flex-direction: row; /* desktop: side by side */
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column; /* mobile first */
+  gap: 1.5rem;
 }
 
 .hero-text {
@@ -122,7 +121,7 @@ a:hover {
 }
 
 .hero-text h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -137,6 +136,7 @@ a:hover {
   color: #fff;
   border-radius: 4px;
   font-weight: 600;
+  text-align: center;
 }
 
 .hero-photo {
@@ -168,13 +168,11 @@ a:hover {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* mobile first */
   gap: 1rem;
-  justify-content: flex-start;
 }
 
 .card {
-  flex: 0 0 300px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -219,7 +217,6 @@ a:hover {
    Mobile Styles
 ============================= */
 @media (max-width: 768px) {
-
   .nav-toggle {
     display: block;
   }
@@ -261,6 +258,37 @@ a:hover {
   }
 
   .card {
-    flex: 0 0 90%;
+    flex: 0 0 100%;
   }
+}
+
+/* =============================
+   Desktop Styles
+============================= */
+@media (min-width: 769px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .card {
+    flex: 0 0 300px;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .main-nav {
+    display: flex !important;
+  }
+
+  .nav-toggle { display: none; }
 }
