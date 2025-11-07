@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Recipes — South Side Brewing</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,106 +14,50 @@
         <div class="logo-mark">SS</div>
         <div class="brand-text">
           <h1>South Side Brewing</h1>
+          <p class="tag">Small-batch. Modern. Rustic.</p>
         </div>
       </a>
-      <button class="nav-toggle" id="navToggle3" aria-label="Open navigation">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
     </div>
-    <nav class="main-nav" id="mainNav3">
+    <nav class="main-nav" id="mainNav">
       <ul class="container nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container recipes-page">
-    <h2>Recipes</h2>
-    <p>All recipes are placeholders for now. Click a recipe to expand details.</p>
-
-    <section class="recipe-list">
-      <article class="recipe-card" id="amber">
-        <header class="recipe-head" data-toggle>
-          <h3>South Side Amber</h3>
-          <span class="chev">▾</span>
-        </header>
-        <div class="recipe-body">
-          <h4>Ingredients</h4>
-          <ul>
-            <li>9 lb Pale Malt</li>
-            <li>1 lb Crystal 60L</li>
-            <li>0.5 lb Munich</li>
-            <li>1 oz Hallertau (60)</li>
-            <li>Yeast: American Ale</li>
-          </ul>
-          <h4>Process</h4>
-          <ol>
-            <li>Mash 152°F for 60 minutes.</li>
-            <li>Boil 60 minutes with hops additions at 60/30/5 min.</li>
-            <li>Cool, ferment at 68°F until final gravity.</li>
-          </ol>
-          <h4>Tasting</h4>
-          <p>Caramel notes, medium body, sessionable at ~5.4% ABV.</p>
-        </div>
+  <main>
+    <section class="container intro">
+      <h2>Recipes</h2>
+      <article id="amber">
+        <h3>South Side Amber</h3>
+        <p>Balanced malt backbone with subtle caramel notes. Perfect for fall evenings.</p>
       </article>
 
-      <article class="recipe-card" id="ipa">
-        <header class="recipe-head" data-toggle>
-          <h3>Rust Belt Haze (Hazy IPA)</h3>
-          <span class="chev">▾</span>
-        </header>
-        <div class="recipe-body">
-          <h4>Ingredients</h4>
-          <ul>
-            <li>10 lb Pale Malt</li>
-            <li>1 lb Flaked Oats</li>
-            <li>1 lb Wheat Malt</li>
-            <li>Hops: heavy late additions (example)</li>
-            <li>Yeast: NEIPA strain</li>
-          </ul>
-          <h4>Process</h4>
-          <ol>
-            <li>Low-temperature mash, high hop aroma with hopstand.</li>
-            <li>Dry hop heavily for aroma.</li>
-          </ol>
-          <h4>Tasting</h4>
-          <p>Juicy, low bitterness, high aroma.</p>
-        </div>
+      <article id="ipa">
+        <h3>Rust Belt Haze</h3>
+        <p>Hoppy and soft — low bitterness, big aroma.</p>
       </article>
 
-      <article class="recipe-card" id="lager">
-        <header class="recipe-head" data-toggle>
-          <h3>Cold Corner Lager</h3>
-          <span class="chev">▾</span>
-        </header>
-        <div class="recipe-body">
-          <h4>Ingredients</h4>
-          <ul>
-            <li>9.5 lb Pilsner Malt</li>
-            <li>0.5 lb Light Munich</li>
-            <li>Hops: Saaz</li>
-            <li>Yeast: Lager strain</li>
-          </ul>
-          <h4>Process</h4>
-          <ol>
-            <li>Step mash or infusion at lager temps.</li>
-            <li>Ferment cool and lager for several weeks.</li>
-          </ol>
-          <h4>Tasting</h4>
-          <p>Crisp, clean, refreshing.</p>
-        </div>
+      <article id="lager">
+        <h3>Cold Corner Lager</h3>
+        <p>Crisp, clean, and sessionable — lagered low and slow.</p>
       </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year3"></span> South Side Brewing.</p>
+      <p>© <span id="year"></span> South Side Brewing — hobbyist brewer. Not for sale.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="gallery.html">Gallery</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
