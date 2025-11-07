@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gallery — South Side Brewing</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,39 +14,41 @@
         <div class="logo-mark">SS</div>
         <div class="brand-text">
           <h1>South Side Brewing</h1>
+          <p class="tag">Small-batch. Modern. Rustic.</p>
         </div>
       </a>
-      <button class="nav-toggle" id="navToggle4" aria-label="Open navigation">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
     </div>
-    <nav class="main-nav" id="mainNav4">
+    <nav class="main-nav" id="mainNav">
       <ul class="container nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container gallery-page">
-    <h2>Gallery</h2>
-    <p>Click any photo to view a larger version.</p>
-
-    <div class="gallery-grid">
-      <a class="gallery-item" href="#"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=800&q=60" alt="Pour"></a>
-      <a class="gallery-item" href="#"><img src="https://images.unsplash.com/photo-1518976024611-7d3f5d8f9b8b?auto=format&fit=crop&w=800&q=60" alt="Batch"></a>
-      <a class="gallery-item" href="#"><img src="https://images.unsplash.com/photo-1505575970896-9a8b3f1b53c9?auto=format&fit=crop&w=800&q=60" alt="Fermentor"></a>
-      <a class="gallery-item" href="#"><img src="https://images.unsplash.com/photo-1512130895200-1144bdc3164a?auto=format&fit=crop&w=800&q=60" alt="Growlers"></a>
-    </div>
+  <main>
+    <section class="container gallery">
+      <h2>Gallery</h2>
+      <div class="cards">
+        <img src="https://images.unsplash.com/photo-1512130895200-1144bdc3164a?auto=format&fit=crop&w=600&q=60" alt="South Side Amber">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=60" alt="Rust Belt Haze">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=60" alt="Cold Corner Lager">
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year4"></span> South Side Brewing.</p>
+      <p>© <span id="year"></span> South Side Brewing — hobbyist brewer. Not for sale.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="recipes.html">Recipes</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
