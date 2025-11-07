@@ -157,11 +157,15 @@ a:hover {
   overflow: hidden;
   max-width: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
   width: 100%;
-  display: block;
+  height: 200px;       /* fixed height for consistency */
+  object-fit: cover;   /* crops excess but keeps aspect ratio */
+  border-bottom: 1px solid #ddd;
 }
 
 .card-body {
@@ -228,5 +232,9 @@ a:hover {
     padding-right: 0;
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .card img {
+    height: 180px; /* slightly smaller on mobile */
   }
 }
