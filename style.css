@@ -19,10 +19,11 @@ h1, h2, h3, h4 {
 
 /* Header */
 .site-header {
-  background: #f8f5f0;
+  background: #b25c2e; /* Brown background */
   padding: 15px 0;
   position: relative;
   z-index: 1000;
+  color: #fff;
 }
 
 .header-inner {
@@ -35,7 +36,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .logo-mark {
@@ -50,6 +51,7 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   display: block;
+  color: #fff;
 }
 
 /* Navigation */
@@ -57,7 +59,7 @@ h1, h2, h3, h4 {
   position: absolute;
   top: 100%;
   right: 0;
-  background: #f8f5f0;
+  background: #fff;
   border: 1px solid #ccc;
   display: none;
   flex-direction: column;
@@ -82,6 +84,7 @@ h1, h2, h3, h4 {
 .nav-list li a {
   text-decoration: none;
   color: #333;
+  font-weight: 600;
 }
 
 /* Hero */
@@ -135,11 +138,12 @@ h1, h2, h3, h4 {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #b25c2e;
-  color: #fff;
+  background: #fff;
+  color: #b25c2e;
   text-decoration: none;
   border-radius: 5px;
   margin-top: 10px;
+  font-weight: 600;
 }
 
 /* Footer */
@@ -152,7 +156,7 @@ h1, h2, h3, h4 {
 /* Desktop layout */
 @media(min-width: 768px) {
   .nav-toggle {
-    display: none;
+    display: none; /* Hide hamburger */
   }
 
   .main-nav {
@@ -160,6 +164,7 @@ h1, h2, h3, h4 {
     display: flex !important;
     flex-direction: row;
     width: auto;
+    background: transparent;
     border: none;
     box-shadow: none;
   }
@@ -170,7 +175,11 @@ h1, h2, h3, h4 {
   }
 
   .nav-list li {
-    padding: 0 15px;
+    padding: 0 20px;
+  }
+
+  .nav-list li a {
+    color: #fff; /* White text on brown header */
   }
 
   .hero {
