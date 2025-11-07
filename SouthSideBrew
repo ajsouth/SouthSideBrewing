@@ -2,5 +2,5 @@ git init
 git add .
 git commit -m "Initial South Side Brewing site"
 git branch -M main
-git remote add origin https://github.com/YOURUSERNAME/southsidebrewing-site.git
+git remote add origin https://github.com/ajsouth/southsidebrewing-site.git
 git push -u origin main
