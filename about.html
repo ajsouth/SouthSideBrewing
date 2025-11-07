@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — South Side Brewing</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,52 +14,38 @@
         <div class="logo-mark">SS</div>
         <div class="brand-text">
           <h1>South Side Brewing</h1>
+          <p class="tag">Small-batch. Modern. Rustic.</p>
         </div>
       </a>
-      <button class="nav-toggle" id="navToggle2" aria-label="Open navigation">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
     </div>
-    <nav class="main-nav" id="mainNav2">
+    <nav class="main-nav" id="mainNav">
       <ul class="container nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="recipes.html">Recipes</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container about-page">
-    <section>
+  <main>
+    <section class="container intro">
       <h2>About the Brewer</h2>
-      <div class="about-grid">
-        <div class="bio">
-          <p><strong>South Side Brewing</strong> is a homebrew project documenting small-batch beers, recipes, and techniques. I'm a hobbyist brewer who enjoys experimenting with malts, hop combinations, and fermentation profiles.</p>
-
-          <h4>My setup</h4>
-          <ul>
-            <li>5-gallon all-grain system</li>
-            <li>Basic temperature-controlled fermentation</li>
-            <li>Mostly single-batch experiments</li>
-          </ul>
-
-          <h4>Notes on sharing</h4>
-          <p>All content is educational. I do not sell or distribute any beer — this is just a personal log of experiments and recipes.</p>
-        </div>
-
-        <div class="bio-photo">
-          <img src="https://images.unsplash.com/photo-1505575970896-9a8b3f1b53c9?auto=format&fit=crop&w=800&q=60" alt="Brewing setup">
-        </div>
-      </div>
+      <p>Hi! I'm AJ South, a homebrewer passionate about small-batch, handcrafted beers. This site is my playground to document experiments, share recipes, and celebrate the art of brewing.</p>
+      <p>All recipes here are for hobbyist/educational purposes only — not for commercial sale.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year2"></span> South Side Brewing — hobbyist brewer.</p>
+      <p>© <span id="year"></span> South Side Brewing — hobbyist brewer. Not for sale.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a> · <a href="recipes.html">Recipes</a> · <a href="gallery.html">Gallery</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
